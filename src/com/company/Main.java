@@ -9,23 +9,20 @@ public class Main {
         int length = input.length();
         double RandomPercent = (int)(Math.random()*input.length());
 
-        String encryption;
+        String input;
         if (RandomPercent == 1){
-        String encryption = Integer.toBinaryString();
+        String input = Integer.toBinaryString();
         }
         else if(RandomPercent ==2){
-            String encryption= Integer.toOctalString();
+            String input= Integer.toOctalString();
         }
         else if(RandomPercent ==3){
-            String encryption = Integer.toDeciamlString();
+            String input = Integer.toHexString();
         }
         else if(RandomPercent ==4){
-            String encryption = Integer.toHexString();
+            String input = Integer.toString();
         }
-        else if(RandomPercent ==5){
-            String encryption = Integer.toAsciiString();
-        }
-        System.out.println(encryption);
+        System.out.println(input);
 
 
 
